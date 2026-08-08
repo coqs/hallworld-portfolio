@@ -4,21 +4,22 @@ import { marked } from 'marked'
 import { api } from './api'
 
 const INITIAL_PORTFOLIO = {
-  identity: { name: 'hallworld', title: 'Junior Security Developer', location: 'Doha, Qatar', email: 'hallworld@atomicmail.io' },
+  identity: { name: 'hallworld', title: 'Security Researcher & Developer', location: 'Doha, Qatar', email: 'hallworld@atomicmail.io' },
   links: [
     { label: 'GitHub', url: 'https://github.com/coqs' },
     { label: 'HackerOne', url: 'https://hackerone.com/hallworld' },
-    { label: 'Art', url: 'https://www.deviantart.com/hallworld' },
   ],
-  summary: 'Junior security developer and pentester focused on web application security, responsible disclosure, and building useful software. Comfortable moving between reconnaissance, exploitation, clean backend code, and practical frontend work.',
+  summary: 'Fullstack developer (JS/React/Node) focused on web application security. Validated Medium + Critical on public bug bounties, found account-takeover and admin-access flaws in production apps across Qatar and the UAE.',
   experience: [
-    { role: 'Independent Security Researcher', organization: 'Responsible disclosure and bug bounty programs', dates: '2025 — Present', bullets: ['Reported high-impact authorization and data-exposure issues through private programs without publishing sensitive target details.', 'Active in web application testing, reconnaissance, vulnerability validation, and clear engagement-style reporting.'] },
+    { role: 'Independent Security Researcher', organization: 'Public bug bounty programs', dates: 'Aug 2026 — Present', bullets: ['Validated 1 Medium and 1 Critical (pending) on a public bug bounty program (program name withheld).', '7 duplicate reports before the first valid finding — persistence through a competitive disclosure process.', 'Reconnaissance, vulnerability validation, and clear engagement-style reporting.'] },
+    { role: 'Private Security Engagements', organization: 'Qatar & UAE — names withheld', dates: '2025 — Present', bullets: ['Document-management platform, Qatar (~80k users): account takeover, admin dashboard access, mass data-exposure potential.', 'Fashion retail app, Qatar: admin dashboard access and mass data-exposure potential.', 'Fashion retail app, UAE: admin dashboard access and mass data-exposure potential.'] },
+    { role: 'Independent Developer', organization: 'Tools and experiments', dates: '2025 — Present', bullets: ['YAFC — Yet Another File Cleaner: Windows file-management tool with resumable sessions, native folder picking, media/document/archive previews, and a keyboard-driven keep/delete flow.', 'TryOn: AI virtual try-on built on Gemini Nano Banana, with a clean Node.js backend.', 'Game reverse-engineering and automation utilities (IDA Pro, Cheat Engine).'] },
   ],
-  education: [{ school: 'Cybersecurity studies', details: 'Network security, web application security, programming, cryptography, and intelligence fundamentals', dates: 'Current' }],
+  education: [{ school: 'Cybersecurity — self-taught', details: 'PortSwigger Web Security Academy labs; web application security, network security, programming, and cryptography fundamentals', dates: '2026 — Present' }],
   skills: [
-    { label: 'Security', value: 'Web application security, OWASP Top 10, reconnaissance, responsible disclosure, basic Linux hardening' },
+    { label: 'Security', value: 'Web application security, OWASP Top 10, reconnaissance, exploitation, responsible disclosure' },
     { label: 'Development', value: 'JavaScript, React, Node.js, Next.js, HTML/CSS, basic Python, basic C++' },
-    { label: 'Tools', value: 'Burp Suite, Wireshark, Kali Linux, GitHub, REST APIs, Cloudflare Workers' },
+    { label: 'Tools', value: 'Burp Suite, IDA Pro, Cheat Engine, GitHub, REST APIs, Cloudflare Workers' },
   ],
   activities: ['Reverse engineering games', 'Bug bounty research', 'AI and robotics competitions'],
   awards: ['1st place — AI & Robotics 2026 Qatar competition, line-following challenge'],
