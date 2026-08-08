@@ -8,14 +8,19 @@ const INITIAL_PORTFOLIO = {
   links: [
     { label: 'GitHub', url: 'https://github.com/coqs' },
     { label: 'HackerOne', url: 'https://hackerone.com/hallworld' },
+    { label: 'Client Work', url: 'https://hall-works.netlify.app/' },
   ],
-  summary: 'Fullstack developer (JS/React/Node) focused on web application security. Validated Medium + Critical on public bug bounties, found account-takeover and admin-access flaws in production apps across Qatar and the UAE.',
+  summary: 'Self-taught fullstack developer running an AI & web services practice for 7 clients, now focused on web application security. Validated Medium + Critical on public bug bounties and found account-takeover and admin-access flaws in production apps across Qatar and the UAE.',
   experience: [
     { role: 'Independent Security Researcher', organization: 'Public bug bounty programs', dates: 'Aug 2026 — Present', bullets: ['Validated 1 Medium and 1 Critical (pending) on a public bug bounty program (program name withheld).', '7 duplicate reports before the first valid finding — persistence through a competitive disclosure process.', 'Reconnaissance, vulnerability validation, and clear engagement-style reporting.'] },
-    { role: 'Private Security Engagements', organization: 'Qatar & UAE — names withheld', dates: '2026 — Present', bullets: ['Document-management platform, Qatar (~80k users): account takeover, admin dashboard access, mass data-exposure potential.', 'Fashion retail app, Qatar: admin dashboard access and mass data-exposure potential.', 'Fashion retail app, UAE: admin dashboard access and mass data-exposure potential.'] },
-    { role: 'Independent Developer', organization: 'Tools and experiments', dates: '2025 — Present', bullets: ['YAFC — Yet Another File Cleaner: Windows file-management tool with resumable sessions, native folder picking, media/document/archive previews, and a keyboard-driven keep/delete flow.', 'TryOn: AI virtual try-on built on Gemini Nano Banana, with a clean Node.js backend.', 'Game reverse-engineering and automation utilities (IDA Pro, Cheat Engine).'] },
+    { role: 'Private Security Engagements', organization: 'Qatar & UAE — names withheld', dates: 'Jul 2026 — Present', bullets: ['Document-management platform, Qatar (~80k users): account takeover, admin dashboard access, mass data-exposure potential.', 'Fashion retail app, Qatar: admin dashboard access and mass data-exposure potential.', 'Fashion retail app, UAE: admin dashboard access and mass data-exposure potential.', 'Three completed engagements (Jul 5–25, 2026); private work continues.'] },
+    { role: 'Freelance Developer', organization: 'AI services & websites — 7 active clients', dates: 'Feb 2026 — Present', bullets: ['Build and maintain websites for 7 clients: salons, gyms, and restaurants.', 'AI services: FAQ and menu answering systems, live for clients.', 'Scaled from 1 to 7 clients since starting in February 2026.', 'Client portfolio: hall-works.netlify.app'] },
+    { role: 'Independent Developer', organization: 'Tools and experiments', dates: '2023 — Present', bullets: ['YAFC — Yet Another File Cleaner: Windows file-management tool with resumable sessions, native folder picking, media/document/archive previews, and a keyboard-driven keep/delete flow.', 'TryOn: AI virtual try-on built on Gemini Nano Banana, with a clean Node.js backend.', 'Game reverse-engineering and automation utilities (IDA Pro, Cheat Engine).'] },
   ],
-  education: [{ school: 'Cybersecurity — self-taught', details: 'PortSwigger Web Security Academy labs; web application security, network security, programming, and cryptography fundamentals', dates: '2026 — Present' }],
+  education: [
+    { school: 'Software development — self-taught', details: 'W3Schools; JavaScript, React, Node.js, HTML/CSS, and web fundamentals', dates: '2020 — Present' },
+    { school: 'Cybersecurity — self-taught', details: 'PortSwigger Web Security Academy labs; web application security, network security, programming, and cryptography fundamentals', dates: 'Apr 2026 — Present' },
+  ],
   skills: [
     { label: 'Security', value: 'Web application security, OWASP Top 10, reconnaissance, exploitation, responsible disclosure' },
     { label: 'Development', value: 'JavaScript, React, Node.js, Next.js, HTML/CSS, basic Python, basic C++' },
