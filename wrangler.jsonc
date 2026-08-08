@@ -7,7 +7,7 @@
     {
       "binding": "DB",
       "database_name": "hallworld-content",
-      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "database_id": "660a5200-0e00-46b1-b1c7-41aabd8137e8",
       "migrations_dir": "migrations"
     }
   ]
