@@ -6,7 +6,7 @@ import { api } from './api'
 const INITIAL_PORTFOLIO = {
   identity: { name: 'hallworld', title: 'Security Researcher & Developer', location: 'Doha, Qatar', email: 'hallworld@atomicmail.io' },
   links: [
-    { label: 'GitHub', url: 'https://github.com/coqs' },
+    { label: 'GitHub · 306+ contributions', url: 'https://github.com/coqs' },
     { label: 'HackerOne', url: 'https://hackerone.com/hallworld' },
     { label: 'Client Work', url: 'https://hall-works.netlify.app/' },
   ],
@@ -119,5 +119,5 @@ export default function App() {
   useEffect(() => { const onPop = () => { setPage(window.location.pathname.startsWith('/admin') ? 'admin' : window.location.pathname.startsWith('/blog') ? 'blog' : 'me'); setSelectedSlug(window.location.pathname.split('/')[2] || null) }; window.addEventListener('popstate', onPop); return () => window.removeEventListener('popstate', onPop) }, [])
   useEffect(() => { if (page === 'admin') api.session().then(() => setAuthenticated(true)).catch(() => setAuthenticated(false)) }, [page])
   const title = useMemo(() => page === 'blog' ? 'Blogs & Writeups' : page === 'admin' ? 'Admin' : 'Me', [page])
-  return <><nav className="site-nav"><button className="brand" onClick={() => navigate('me')}>hallworld</button><div className="nav-links"><button className={title === 'Me' ? 'active' : ''} onClick={() => navigate('me')}>Me</button><button className={title === 'Blogs & Writeups' ? 'active' : ''} onClick={() => navigate('blog')}>Blogs & Writeups</button></div><button className="admin-link" onClick={() => navigate('admin')}>Admin</button></nav>{loading ? <main className="loading">Loading resume…</main> : page === 'admin' ? (authenticated ? <Admin onLogout={async () => { await api.logout(); setAuthenticated(false) }} /> : <Login onLogin={() => setAuthenticated(true)} />) : page === 'blog' ? <Blog posts={posts} selectedSlug={selectedSlug} onOpen={(slug) => navigate('blog', slug)} /> : <Resume portfolio={portfolio} projects={projects} />}<footer><span>hallworld · {new Date().getFullYear()}</span><span>Built with intent.</span></footer></>
+  return <><nav className="site-nav"><button className={title === 'Me' ? 'brand active' : 'brand'} onClick={() => navigate('me')}>hallworld</button><div className="nav-links"><button className={title === 'Blogs & Writeups' ? 'active' : ''} onClick={() => navigate('blog')}>Blogs & Writeups</button></div><button className="admin-link" onClick={() => navigate('admin')}>Admin</button></nav>{loading ? <main className="loading">Loading resume…</main> : page === 'admin' ? (authenticated ? <Admin onLogout={async () => { await api.logout(); setAuthenticated(false) }} /> : <Login onLogin={() => setAuthenticated(true)} />) : page === 'blog' ? <Blog posts={posts} selectedSlug={selectedSlug} onOpen={(slug) => navigate('blog', slug)} /> : <Resume portfolio={portfolio} projects={projects} />}<footer><span>hallworld · {new Date().getFullYear()}</span></footer></>
 }
