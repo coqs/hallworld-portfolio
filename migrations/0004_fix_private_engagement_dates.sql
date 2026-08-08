@@ -6,5 +6,4 @@
 UPDATE portfolio_content SET
   data_json = REPLACE(data_json, '"organization":"Qatar & UAE — names withheld","dates":"2025 — Present"', '"organization":"Qatar & UAE — names withheld","dates":"2026 — Present"'),
   updated_at = '2026-08-09T00:00:00.000Z'
-WHERE id = 1
-  AND data_json LIKE '%"organization":"Qatar & UAE — names withheld","dates":"2025 — Present"%';
+WHERE id = 1;
